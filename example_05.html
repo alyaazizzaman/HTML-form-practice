@@ -1,0 +1,84 @@
+<!doctype>
+<html>
+  <head>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Example 1</a>
+      <a href="example_02.html">Example 2</a>
+      <a href="example_03.html">Example 3</a>
+      <a href="example_04.html">Example 4</a>
+      <a href="example_05.html">Example 5</a>
+      <a href="example_06.html">Example 6</a>
+    </nav>
+    <h1>Form Fields: Example 5</h1>
+
+    <form action="example_05.html" method="get">
+      <div>
+        <label>Song Name</label>
+        <input type="text" name='Song Name'>
+      </div>
+      <div>
+        <label>Songwriter Email</label>
+        <input type="songwriter email" name='email'>
+      </div>
+      <div>
+        <input type="checkbox" name='acaAwesome'>
+        <label>Aca-awesome?</label>
+      </div>
+      <div>
+        <input type="checkbox" name='regionals'>
+        <label>Will win regionals?</label>
+      </div>
+      <div>
+        <radiogroup>
+          <label>Slight Diva</label>
+          <input name = "Slight Diva" type="radio">
+          <input type="radio">
+          <input name = "Extreme Diva" type="radio">
+          <label>Extreme Diva</label>
+        </radiogroup>
+      </div>
+      <div>
+        <label>Comments</label>
+        <input name="comments">
+      </div>
+      <div>
+        <label>Soloist</label>
+        <select name="soloist">
+            <option value="Mercedes Jones">Mercedes Jones</option>
+            <option value="Bob Loblaw">Bob Loblaw</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit">
+        <input type="button" value="Cancel" onClick="history.go(0)">
+        <input type="button" value="I can haz html!!" onClick="history.go(0)">
+      </div>
+
+    </form>
+
+    <div class="query-params">
+      <h2>Query Params</h2>
+      <p>
+        This shows you all of the names and values that
+        have been sent to the server. (<a href="example_05.html">clear</a>)
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Field Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
